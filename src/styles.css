@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+.my-container {
+    margin: 0 auto;
+    margin-top: 200px;
+    max-width: 500px;
+}
+
+.custom-icon {
+    font-weight: bold;  /* Mettre en gras */
+  }
+  
