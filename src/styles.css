@@ -5,6 +5,12 @@
     max-width: 500px;
 }
 
+.my-containerInscription {
+    margin: 0 auto;
+    margin-top: 10px;
+    max-width: 500px;
+}
+
 .custom-icon {
     font-weight: bold;  /* Mettre en gras */
   }
