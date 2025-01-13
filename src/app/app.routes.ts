@@ -5,6 +5,7 @@ import { PageDashboardComponent } from './pages/page-dashboard/page-dashboard.co
 import { PageStatistiquesComponent } from './pages/page-statistiques/page-statistiques.component';
 import { PageArticleComponent } from './pages/articles/page-article/page-article.component';
 import { NouvelArticleComponent } from './pages/articles/nouvel-article/nouvel-article.component';
+import { PageMwtskComponent } from './pages/mvtsk/page-mwtsk/page-mwtsk.component';
 
 export const routes: Routes = [
     {
@@ -30,6 +31,10 @@ export const routes: Routes = [
             {
                 path: 'nouvel-article',
                 component: NouvelArticleComponent
+            },
+            {
+                path: 'mouvement-stock',
+                component: PageMwtskComponent
             },
         ]
     }

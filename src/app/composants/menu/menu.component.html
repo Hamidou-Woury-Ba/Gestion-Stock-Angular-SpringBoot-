@@ -15,7 +15,7 @@
                 <ul class="list-group">
                     <li class="list-group-item" *ngFor="let sousMenu of menu.sousMenu">
                         <fa-icon *ngIf="sousMenu.icon" [icon]="sousMenu.icon" class="custom-icon"></fa-icon> &nbsp;
-                        <a href="javascript:void(0)" (click)="navigate(sousMenu.url)">{{sousMenu.titre}}</a>
+                        <a href="javascript:void(0)" (click)="navigate(sousMenu.url)" class="btn-link">{{sousMenu.titre}}</a>
                     </li>
                 </ul>
             </div>
