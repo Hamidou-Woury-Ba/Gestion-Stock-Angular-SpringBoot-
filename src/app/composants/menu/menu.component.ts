@@ -87,7 +87,7 @@
             id: 41,
             titre: "Fournisseurs",
             icon: this.icon["faUsers"],
-            url: ""
+            url: "fournisseurs"
           },
           {
             id: 42,
