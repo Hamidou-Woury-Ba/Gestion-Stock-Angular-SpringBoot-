@@ -33,7 +33,7 @@ export const routes: Routes = [
                 component: NouvelArticleComponent
             },
             {
-                path: 'mouvement-stock',
+                path: 'mouvementstock',
                 component: PageMwtskComponent
             },
         ]

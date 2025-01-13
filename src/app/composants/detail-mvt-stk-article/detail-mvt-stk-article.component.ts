@@ -15,5 +15,7 @@ export class DetailMvtStkArticleComponent {
   faCubesStacked = Icons['faCubesStacked'];
   faInfoCircle = Icons['faInfoCircle'];
   faDollar = Icons['faDollar'];
+  faBan = Icons['faBan'];
+  faSave = Icons['faSave'];
 
 }

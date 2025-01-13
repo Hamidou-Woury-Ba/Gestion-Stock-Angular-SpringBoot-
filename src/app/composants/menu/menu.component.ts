@@ -53,7 +53,7 @@
             id: 22,
             titre: "Mouvement du stock",
             icon: this.icon["faCubesStacked"],
-            url: "mouvement-stock"
+            url: "mouvementstock"
           }
         ]
       },
