@@ -47,7 +47,7 @@
             id: 21,
             titre: "Articles",
             icon: this.icon["faBoxesStacked"],
-            url: ""
+            url: "articles"
           },
           {
             id: 22,

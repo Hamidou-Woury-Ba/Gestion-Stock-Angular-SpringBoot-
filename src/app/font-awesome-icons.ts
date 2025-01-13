@@ -1,4 +1,4 @@
-import { faBoxesStacked, faChartLine, faChartPie, faChartSimple, faCog, faCubesStacked, faSearch, faShoppingBasket, faTools, faTruck, faUserCog, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faBoxesStacked, faChartLine, faChartPie, faChartSimple, faCog, faCubesStacked, faDollar, faFlag, faInfoCircle, faList, faPencil, faSearch, faShoppingBasket, faTools, faTrash, faTruck, faUserCog, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 export const Icons: { [key: string]: IconDefinition } = {
@@ -13,5 +13,11 @@ export const Icons: { [key: string]: IconDefinition } = {
   faUserCog,
   faTools,
   faCubesStacked,
-  faSearch
+  faSearch,
+  faInfoCircle,
+  faDollar,
+  faFlag,
+  faPencil,
+  faTrash,
+  faList
 };
