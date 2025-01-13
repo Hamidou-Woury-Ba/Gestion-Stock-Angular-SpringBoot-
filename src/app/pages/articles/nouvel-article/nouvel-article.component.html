@@ -1,0 +1,60 @@
+<div class="col m-3">
+    <div class="col-md-12 mb-3">
+        <img src="product.png" alt="" width="200px" height="200px" class="rounded-circle">
+    </div>
+    <hr>
+
+    <div class="col-md-12">
+        <div class="col-md-12 flex mb-3">
+            <fa-icon [icon]="faInfoCircle" class="color-blue"></fa-icon>
+            <h2>Informations de l'article</h2>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <form>
+            <div class="row mb-3">
+                <div class="col form-group">
+                    <input type="number" class="form-control" aria-describedby="emailHelp" placeholder="Code article">
+                </div>
+                <div class="col form-group">
+                    <input type="text" class="form-control" placeholder="Designation">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col form-group">
+                    <input type="number" class="form-control" aria-describedby="emailHelp"
+                        placeholder="Prix unitaire HT">
+                </div>
+                <div class="col form-group">
+                    <input type="text" class="form-control" placeholder="Taux TVA">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col form-group">
+                    <input type="number" class="form-control" aria-describedby="emailHelp"
+                        placeholder="Priw unitaire TTC">
+                </div>
+                <div class="col">
+                    <select class="custom-select form-control">
+                        <option selected>Sélectionner une catégorie</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-md-12 text-right">
+        <button class="btn btn-danger mr-10">
+            <fa-icon [icon]="faCancel"></fa-icon>
+            Annuler
+        </button>
+        <button class="btn btn-primary">
+            <fa-icon [icon]="faSave"></fa-icon> 
+            Enregistrer
+        </button>
+    </div>
+</div>

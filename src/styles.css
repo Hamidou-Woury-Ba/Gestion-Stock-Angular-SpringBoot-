@@ -40,3 +40,13 @@ body {
 .mr-0{
   margin-right: 0px;
 }
+
+.flex{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mr-10{
+  margin-right: 10px;
+}
