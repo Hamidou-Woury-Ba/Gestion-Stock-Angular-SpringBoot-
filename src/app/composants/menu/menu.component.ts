@@ -67,7 +67,7 @@
             id: 31,
             titre: "Clients",
             icon: this.icon["faUsers"],
-            url: ""
+            url: "clients"
           },
           {
             id: 32,
