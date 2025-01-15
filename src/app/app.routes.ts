@@ -10,6 +10,7 @@ import { PageMwtskComponent } from './pages/mvtsk/page-mwtsk/page-mwtsk.componen
 import { PageClientComponent } from './pages/client/page-client/page-client.component';
 import { PageFournisseurComponent } from './pages/fournisseur/page-fournisseur/page-fournisseur.component';
 import { NouveauClientFournisseurComponent } from './composants/nouveau-client-fournisseur/nouveau-client-fournisseur.component';
+import { NouvelleCommandeClientsFournisseursComponent } from './composants/nouvelle-commande-clients-fournisseurs/nouvelle-commande-clients-fournisseurs.component';
 
 export const routes: Routes = [
     {
@@ -53,6 +54,10 @@ export const routes: Routes = [
                 component: PageCommandeClientsFournisseursComponent
             },
             {
+                path: 'nouvelle-commande-client',
+                component: NouvelleCommandeClientsFournisseursComponent
+            },
+            {
                 path: 'fournisseurs',
                 component: PageFournisseurComponent
             },
@@ -63,6 +68,10 @@ export const routes: Routes = [
             {
                 path: 'commande-fournisseur',
                 component: PageCommandeClientsFournisseursComponent
+            },
+            {
+                path: 'nouvelle-commande-fournisseur',
+                component: NouvelleCommandeClientsFournisseursComponent
             },
         ]
     }

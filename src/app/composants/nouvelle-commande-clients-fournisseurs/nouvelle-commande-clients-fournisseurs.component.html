@@ -1,0 +1,131 @@
+<div class="col m-3">
+    <div class="col-md-12">
+        <div class="col-md-12 mb-3">
+            <h2>Nouvelle commande</h2>
+        </div>
+
+        <!-- Formulaire ajout commande, Informations, image -->
+        <div class="row p-3 custom-border">
+            <!-- Formulaire ajout commande -->
+            <div class="col-md-5 border-right">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Code commande">
+                    </div>
+                    <div class="form-group mt-3 mb-3">
+                        <input type="text" class="form-control" placeholder="Date commande">
+                    </div>
+                    <div class="form-group">
+                        <select class="custom-select form-control">
+                            <option selected>Sélectionner un client</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Informations -->
+            <div class="col-md-5 border-right">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-md-1">
+                            <fa-icon [icon]="faInfoCircle" class="color-blue"></fa-icon>
+                        </div>
+                        <div class="col-md-11">
+                            Nom
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <fa-icon [icon]="faInfoCircle" class="color-blue"></fa-icon>
+                        </div>
+                        <div class="col-md-11">
+                            Prenom
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <fa-icon [icon]="faPhoneAlt" class="color-blue"></fa-icon>
+                        </div>
+                        <div class="col-md-11">
+                            77 490 46 58
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <fa-icon [icon]="faHourglassHalf" class="color-blue"></fa-icon>
+                        </div>
+                        <div class="col-md-11">
+                            EN PREPARATION
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- image -->
+            <div class="col-md-2 text-center">
+                <img src="product.png" alt="" class="rounded-circle" width="150px" height="150px">
+            </div>        
+        </div>
+        <!-- Forms ajout article -->
+        <div class="row p-3 mt-2 custom-border">
+            <form>
+                <div class="form-row flex">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Code article">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Quantité">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Prix unitaire">
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-success">
+                            <fa-icon [icon]="faPlus"></fa-icon>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- details commandes -->
+        <div class="row p-3 mt-2 custom-border" style="overflow-y: scroll; max-height: 300px;">
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+            <app-detail-commande></app-detail-commande>
+        </div>
+
+        <!-- Total -->
+        <div class="row p-3 mt-2 custom-border text-right">
+            <h3>Total de la commande : 136,9</h3>
+        </div>
+
+        <!-- Boutons soumissions -->
+        <div class="col-md-12 text-right mt-2">
+            <button class="btn btn-danger mr-10">
+                <fa-icon [icon]="faCancel"></fa-icon>
+                Annuler
+            </button>
+            <button class="btn btn-primary">
+                <fa-icon [icon]="faSave"></fa-icon>
+                Enregistrer
+            </button>
+        </div>
+
+    </div>
