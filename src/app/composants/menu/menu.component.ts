@@ -73,7 +73,7 @@
             id: 32,
             titre: "Commandes clients",
             icon: this.icon["faShoppingBasket"],
-            url: ""
+            url: "commande-client"
           }
         ]
       },
@@ -93,7 +93,7 @@
             id: 42,
             titre: "Commandes fournisseurs",
             icon: this.icon["faTruck"],
-            url: ""
+            url: "commande-fournisseur"
           },
         ]
       },

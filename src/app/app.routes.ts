@@ -1,3 +1,4 @@
+import { PageCommandeClientsFournisseursComponent } from './pages/page-commande-clients-fournisseurs/page-commande-clients-fournisseurs.component';
 import { Routes } from '@angular/router';
 import { PageInscriptionComponent } from './pages/page-inscription/page-inscription.component';
 import { PageLoginComponent } from './pages/page-login/page-login.component';
@@ -48,12 +49,20 @@ export const routes: Routes = [
                 component: NouveauClientFournisseurComponent
             },
             {
+                path: 'commande-client',
+                component: PageCommandeClientsFournisseursComponent
+            },
+            {
                 path: 'fournisseurs',
                 component: PageFournisseurComponent
             },
             {
                 path: 'nouveau-fournisseur',
                 component: NouveauClientFournisseurComponent
+            },
+            {
+                path: 'commande-fournisseur',
+                component: PageCommandeClientsFournisseursComponent
             },
         ]
     }

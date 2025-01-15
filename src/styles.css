@@ -24,6 +24,10 @@ body {
   text-align: right;
 }
 
+.text-left{
+  text-align: left;
+}
+
 .border-right{
   border-right: 2px solid #9ca1a6 !important;
 }
