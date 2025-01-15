@@ -107,13 +107,13 @@
             id: 51,
             titre: "Catégories",
             icon: this.icon["faTools"],
-            url: ""
+            url: "categorie"
           },
           {
             id: 52,
             titre: "Utitlisateurs",
             icon: this.icon["faUserCog"],
-            url: ""
+            url: "utilisateurs"
           },
         ]
       }
