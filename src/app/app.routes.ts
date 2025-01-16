@@ -12,6 +12,8 @@ import { PageFournisseurComponent } from './pages/fournisseur/page-fournisseur/p
 import { NouveauClientFournisseurComponent } from './composants/nouveau-client-fournisseur/nouveau-client-fournisseur.component';
 import { NouvelleCommandeClientsFournisseursComponent } from './composants/nouvelle-commande-clients-fournisseurs/nouvelle-commande-clients-fournisseurs.component';
 import { PageCategorieComponent } from './pages/categories/page-categorie/page-categorie.component';
+import { PageUtilisateurComponent } from './pages/utilisateur/page-utilisateur/page-utilisateur.component';
+import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisateur/nouvel-utilisateur.component';
 
 export const routes: Routes = [
     {
@@ -81,6 +83,14 @@ export const routes: Routes = [
             {
                 path: 'nouvelle-categorie',
                 component: PageCategorieComponent
+            },
+            {
+                path: 'utilisateurs',
+                component: PageUtilisateurComponent
+            },
+            {
+                path: 'nouvel-utilisateur',
+                component: NouvelUtilisateurComponent
             },
         ]
     }
