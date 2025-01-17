@@ -1,1 +1,38 @@
-<p>changer-mot-de-passe works!</p>
+<div class="row m-3">
+    <div class="card col-md-4 p-0 mr-10 text-center">
+        <div class="col">
+            <div class="mb-3 mt-3">
+                <img src="product.png" alt="" class="rounded-circle" width="200px" height="200px">
+            </div>
+            <div class="mb-3">
+                <h2>Nom Prenom</h2>
+                <small class="form-text text-muted">Adresse, Ville, 1234</small>
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-7">
+        <form class="mt-3">
+            <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Ancien mot de passe">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Nouveau mot de passe">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Confirmer le mot de passe">
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-md-12 text-right">
+                <button class="btn btn-danger mr-10">
+                    <fa-icon [icon]="faCancel"></fa-icon>
+                    Annuler
+                </button>
+                <button class="btn btn-primary">
+                    <fa-icon [icon]="faSave"></fa-icon>
+                    Enregistrer
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
