@@ -14,6 +14,8 @@ import { NouvelleCommandeClientsFournisseursComponent } from './composants/nouve
 import { PageCategorieComponent } from './pages/categories/page-categorie/page-categorie.component';
 import { PageUtilisateurComponent } from './pages/utilisateur/page-utilisateur/page-utilisateur.component';
 import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisateur/nouvel-utilisateur.component';
+import { PageProfilComponent } from './pages/profil/page-profil/page-profil.component';
+import { ChangerMotDePasseComponent } from './pages/profil/changer-mot-de-passe/changer-mot-de-passe.component';
 
 export const routes: Routes = [
     {
@@ -91,6 +93,14 @@ export const routes: Routes = [
             {
                 path: 'nouvel-utilisateur',
                 component: NouvelUtilisateurComponent
+            },
+            {
+                path: 'profil',
+                component: PageProfilComponent
+            },
+            {
+                path: 'changer-mot-de-passe',
+                component: ChangerMotDePasseComponent
             },
         ]
     }

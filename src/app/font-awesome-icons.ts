@@ -1,4 +1,4 @@
-import { faAngleDoubleLeft, faAngleDoubleRight, faAngleLeft, faAngleRight, faBan, faBox, faBoxesStacked, faCalendarCheck, faCancel, faCartArrowDown, faChartLine, faChartPie, faChartSimple, faCloudDownload, faCloudUpload, faCog, faCubesStacked, faDollar, faDownload, faFlag, faGlobeEurope, faHome, faHourglassHalf, faInfoCircle, faList, faMapMarkedAlt, faPencil, faPhoneAlt, faPlus, faQrcode, faSave, faSearch, faShoppingBasket, faTools, faTrash, faTruck, faUpload, faUserCog, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDoubleLeft, faAngleDoubleRight, faAngleLeft, faAngleRight, faBan, faBox, faBoxesStacked, faCalendarCheck, faCancel, faCartArrowDown, faChartLine, faChartPie, faChartSimple, faCloudDownload, faCloudUpload, faCog, faCubesStacked, faDollar, faDownload, faFlag, faGlobeEurope, faHome, faHourglassHalf, faInfoCircle, faList, faLock, faMapMarkedAlt, faPencil, faPencilAlt, faPhoneAlt, faPlus, faQrcode, faSave, faSearch, faShoppingBasket, faTools, faTrash, faTruck, faUpload, faUserCog, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 export const Icons: { [key: string]: IconDefinition } = {
@@ -38,5 +38,7 @@ export const Icons: { [key: string]: IconDefinition } = {
   faQrcode,
   faCalendarCheck,
   faCartArrowDown,
-  faHourglassHalf
+  faHourglassHalf,
+  faPencilAlt,
+  faLock
 };
