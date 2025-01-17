@@ -1,0 +1,32 @@
+<div class="col m-3">
+
+    <div class="col-md-12">
+        <div class="col-md-12 flex mb-3">
+            <h2>Nouvelle catégorie</h2>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-12 form-group mb-3">
+                    <input type="number" class="form-control" placeholder="Code catégorie">
+                </div>
+                <div class="col-md-12 form-group">
+                    <input type="text" class="form-control" placeholder="Description">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-md-12 text-right">
+        <button class="btn btn-danger mr-10" (click)="cancel()">
+            <fa-icon [icon]="faCancel"></fa-icon>
+            Annuler
+        </button>
+        <button class="btn btn-primary" (click)="save()">
+            <fa-icon [icon]="faSave"></fa-icon> 
+            Enregistrer
+        </button>
+    </div>
+</div>

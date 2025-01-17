@@ -12,13 +12,18 @@
             </div>
         </div>
         <div class="card col-md-10 pl-0 pr-0 backgroud-gray border-none">
-            <div class="col pl-0 pr-0 d-flex flex-column justify-content-between">
+            <div class="col pl-0 pr-0 d-flex flex-column justify-content-between" style="height: 100vh;">
+                <!-- Header -->
                 <div class="card p-3 min-height-80 mb-2">
                     <app-header></app-header>
                 </div>
-                <div class="card mb-2">
-                    <router-outlet />
+
+                <!-- Router Outlet -->
+                <div class="card mb-2 flex-grow-1 d-flex">
+                    <router-outlet></router-outlet>
                 </div>
+
+                <!-- Footer -->
                 <div class="card min-height-80">
                     Footer
                 </div>

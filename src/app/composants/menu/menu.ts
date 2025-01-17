@@ -5,5 +5,6 @@ export interface Menu{
     titre?: string;
     icon?: IconDefinition | string;
     url?: string;
+    active?: boolean;
     sousMenu?: Menu[];
 }

@@ -4,27 +4,30 @@ import { Icons } from '../../../font-awesome-icons';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-changer-mot-de-passe',
+  selector: 'app-nouvelle-categorie',
   standalone: true,
   imports: [FontAwesomeModule],
-  templateUrl: './changer-mot-de-passe.component.html',
-  styleUrl: './changer-mot-de-passe.component.css'
+  templateUrl: './nouvelle-categorie.component.html',
+  styleUrl: './nouvelle-categorie.component.css'
 })
-export class ChangerMotDePasseComponent implements OnInit{
+export class NouvelleCategorieComponent implements OnInit{
 
-  faCancel = Icons["faCancel"];
-  faSave = Icons["faSave"];
+  faCancel = Icons['faCancel'];
+  faSave = Icons['faSave'];
 
   constructor(
-    private router : Router,
+    private route : Router
   ) { }
 
   ngOnInit(): void {
-      
   }
 
   cancel() : void {
-    this.router.navigate(["profil"]);
+    this.route.navigate(['categorie']);
+  }
+
+  save() : void {
+
   }
 
 }

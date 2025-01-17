@@ -16,6 +16,7 @@ import { PageUtilisateurComponent } from './pages/utilisateur/page-utilisateur/p
 import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisateur/nouvel-utilisateur.component';
 import { PageProfilComponent } from './pages/profil/page-profil/page-profil.component';
 import { ChangerMotDePasseComponent } from './pages/profil/changer-mot-de-passe/changer-mot-de-passe.component';
+import { NouvelleCategorieComponent } from './pages/categories/nouvelle-categorie/nouvelle-categorie.component';
 
 export const routes: Routes = [
     {
@@ -52,15 +53,24 @@ export const routes: Routes = [
             },
             {
                 path: 'nouveau-client',
-                component: NouveauClientFournisseurComponent
+                component: NouveauClientFournisseurComponent,
+                data:{
+                    origin: 'client'
+                }
             },
             {
                 path: 'commande-client',
-                component: PageCommandeClientsFournisseursComponent
+                component: PageCommandeClientsFournisseursComponent,
+                data:{
+                    origin: 'client'
+                }
             },
             {
                 path: 'nouvelle-commande-client',
-                component: NouvelleCommandeClientsFournisseursComponent
+                component: NouvelleCommandeClientsFournisseursComponent,
+                data:{
+                    origin: 'client'
+                }
             },
             {
                 path: 'fournisseurs',
@@ -68,15 +78,24 @@ export const routes: Routes = [
             },
             {
                 path: 'nouveau-fournisseur',
-                component: NouveauClientFournisseurComponent
+                component: NouveauClientFournisseurComponent,
+                data:{
+                    origin: 'fournisseur'
+                }
             },
             {
                 path: 'commande-fournisseur',
-                component: PageCommandeClientsFournisseursComponent
+                component: PageCommandeClientsFournisseursComponent,
+                data:{
+                    origin: 'fournisseur'
+                }
             },
             {
                 path: 'nouvelle-commande-fournisseur',
-                component: NouvelleCommandeClientsFournisseursComponent
+                component: NouvelleCommandeClientsFournisseursComponent,
+                data:{
+                    origin: 'fournisseur'
+                }
             },
             {
                 path: 'categorie',
@@ -84,7 +103,7 @@ export const routes: Routes = [
             },
             {
                 path: 'nouvelle-categorie',
-                component: PageCategorieComponent
+                component: NouvelleCategorieComponent
             },
             {
                 path: 'utilisateurs',

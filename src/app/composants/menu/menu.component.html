@@ -13,9 +13,14 @@
             data-bs-parent="#accordionExample">
             <div class="card">
                 <ul class="list-group">
-                    <li class="list-group-item" *ngFor="let sousMenu of menu.sousMenu">
+                    <li class="list-group-item" 
+                        *ngFor="let sousMenu of menu.sousMenu"
+                        [ngClass]="{'text-white bg-primary': sousMenu.active, '' : !sousMenu.active}"
+                    >
                         <fa-icon *ngIf="sousMenu.icon" [icon]="sousMenu.icon" class="custom-icon"></fa-icon> &nbsp;
-                        <a href="javascript:void(0)" (click)="navigate(sousMenu.url)" class="btn-link">{{sousMenu.titre}}</a>
+                        <a href="javascript:void(0)" (click)="navigate(sousMenu)" style="color: inherit"
+                            class="btn-link">{{sousMenu.titre}}
+                        </a>
                     </li>
                 </ul>
             </div>

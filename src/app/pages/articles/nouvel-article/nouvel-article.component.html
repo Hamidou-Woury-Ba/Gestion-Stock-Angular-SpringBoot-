@@ -48,11 +48,11 @@
     </div>
 
     <div class="col-md-12 text-right">
-        <button class="btn btn-danger mr-10">
+        <button class="btn btn-danger mr-10" (click)="cancel()">
             <fa-icon [icon]="faCancel"></fa-icon>
             Annuler
         </button>
-        <button class="btn btn-primary">
+        <button class="btn btn-primary" (click)="save()">
             <fa-icon [icon]="faSave"></fa-icon> 
             Enregistrer
         </button>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Icons } from '../../../font-awesome-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nouvel-utilisateur',
@@ -14,5 +15,17 @@ export class NouvelUtilisateurComponent {
   faInfoCircle = Icons['faInfoCircle']
   faCancel = Icons['faCancel']
   faSave = Icons['faSave']
+
+  constructor(
+    private route: Router,
+  ) { }
+
+  save(): void {
+
+  }
+
+  cancel(): void {
+    this.route.navigate(['utilisateurs']);
+  }
 
 }

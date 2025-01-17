@@ -7,7 +7,7 @@
     <div class="col-md-12">
         <div class="col-md-12 flex mb-3">
             <fa-icon [icon]="faInfoCircle" class="color-blue"></fa-icon>
-            <h2>Informations du client / fournisseur</h2>
+            <h2>Informations du {{ origin }}</h2>
         </div>
     </div>
 
@@ -57,11 +57,11 @@
     </div>
 
     <div class="col-md-12 text-right">
-        <button class="btn btn-danger mr-10">
+        <button class="btn btn-danger mr-10" (click)="cancelClick()">
             <fa-icon [icon]="faCancel"></fa-icon>
             Annuler
         </button>
-        <button class="btn btn-primary">
+        <button class="btn btn-primary" (click)="saveClick()">
             <fa-icon [icon]="faSave"></fa-icon> 
             Enregistrer
         </button>
