@@ -3,7 +3,7 @@ import { Icons } from '../../font-awesome-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DetailArticleComponent } from "../detail-article/detail-article.component";
 import { DetailCommandeComponent } from "../detail-commande/detail-commande.component";
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-nouvelle-commande-clients-fournisseurs',
@@ -24,13 +24,22 @@ export class NouvelleCommandeClientsFournisseursComponent implements OnInit{
   faPlus = Icons['faPlus']
 
   constructor(
-    private activatedRoute : ActivatedRoute
+    private activatedRoute : ActivatedRoute,
+    private route : Router
   ){}
 
   ngOnInit(): void {
       this.activatedRoute.data.subscribe(data => {
         this.origin = data['origin'];
       })
+  }
+
+  cancel() : void{
+    if(this.origin === 'client'){
+      this.route.navigate(['commande-client']);
+    }else if(this.origin === 'fournisseur'){
+      this.route.navigate(['commande-fournisseur']);
+    }
   }
 
 }
