@@ -39,3 +39,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Créer un service
   ng g s MyFirstService
+
+# Backend
+## Swagger
+### dependences 
+* ng-packagr
+* ng-swagger-gen
